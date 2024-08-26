@@ -1,0 +1,7 @@
+export enum ColumnType {
+  TEXT = "TEXT",
+  NUMBER = "INTEGER",
+  AUTO_INCREMENT = "AUTOINCREMENT",
+  PRIMARY_KEY = "PRIMARY KEY",
+  NOT_NULL = "NOT NULL",
+}
