@@ -1,20 +1,9 @@
 import { StatusBar } from "expo-status-bar";
-import {
-  Button,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
-import * as SQLite from "expo-sqlite";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import { useEffect, useState } from "react";
-import { getAll, initTable, insertData } from "./utils/sqlite.utils";
 import { getAllUsers } from "./services/user/user.service";
 import UserAddForm from "./components/user-form/user-form";
-import { CreateUserDto, User } from "./services/user/user.model";
-import Entypo from "@expo/vector-icons/Entypo";
+import { User } from "./services/user/user.model";
 import UserList from "./components/user-list/user-list";
 
 export default function App() {
